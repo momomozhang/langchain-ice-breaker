@@ -20,6 +20,8 @@ def ice_break_with(name: str="Mengni Zhang Berlin", mock: bool=False) -> Tuple[S
         given the LinkedIn information {information} about a person. I want you to create:
         1. a short summary
         2. two interesting facts about them
+        3. two ice breaker questions to ask them at the beginning of an interview. the questions have to be based on the information from their linkedin profile.
+        4. two topics that may interest them based on their experience and background
         \n{format_instructions}
     """
     summary_prompt_template = PromptTemplate(
@@ -31,11 +33,14 @@ def ice_break_with(name: str="Mengni Zhang Berlin", mock: bool=False) -> Tuple[S
     chain = summary_prompt_template | llm | summary_parser
     chain_result:Summary = chain.invoke(input={"information": linkedin_data})
     
+    print(f"Chain Result: {chain_result}")  # Debug print
+    print(f"Chain Result Dict: {chain_result.to_dict()}")  # Debug print
+    
     return chain_result, linkedin_data.get("photoUrl")
 
 if __name__ == "__main__":
     load_dotenv()
     
     print("Ice Breaker Enter")
-    ice_break_with(mock = False)
+    ice_break_with(mock = True)
     
