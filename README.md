@@ -1,9 +1,9 @@
-![Ice Breaker Screenshot](<Screenshot 2025-05-23 at 15.59.21.png>)
-
 # Ice Breaker 🤝
 Built this while taking Eden Marco's LangChain course. It finds LinkedIn profiles and generates conversation starters. Added some extra features because it's fun!
 
 It's an AI-powered web application that helps you prepare for meetings by generating conversation starters based on LinkedIn profiles. Simply enter someone's name, and get personalized ice breakers, interesting facts, and conversation topics!
+
+![Ice Breaker Screenshot](<Screenshot 2025-05-23 at 15.59.21.png>)
 
 ### 🎯 Learning Goals Achieved
 
