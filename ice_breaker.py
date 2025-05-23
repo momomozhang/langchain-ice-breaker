@@ -20,8 +20,8 @@ def ice_break_with(name: str="Mengni Zhang Berlin", mock: bool=False) -> Tuple[S
         given the LinkedIn information {information} about a person. I want you to create:
         1. a short summary
         2. two interesting facts about them
-        3. two ice breaker questions to ask them at the beginning of an interview. the questions have to be based on the information from their linkedin profile.
-        4. two topics that may interest them based on their experience and background
+        3. based on their linkedin profile information, create two questions that I can ask them at the beginning of an interview to break the ice.
+        4. two potential hobbys or interests based on their experience and background
         \n{format_instructions}
     """
     summary_prompt_template = PromptTemplate(
