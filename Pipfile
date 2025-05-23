@@ -11,6 +11,8 @@ langchainhub = "*"
 black = "*"
 langchain-ollama = "*"
 requests = "*"
+pydantic = "*"
+flask = "*"
 
 [dev-packages]
 
